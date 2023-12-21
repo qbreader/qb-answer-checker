@@ -1,0 +1,34 @@
+{
+  "name": "qb-answer-checker",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A package to automatically check/judge answers against quizbowl answerlines.",
+  "main": "lib/check-answer.js",
+  "scripts": {
+    "test": "mocha test/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qbreader/qb-answer-checker.git"
+  },
+  "keywords": [
+    "quizbowl",
+    "qb"
+  ],
+  "author": "Geoffrey Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qbreader/qb-answer-checker/issues"
+  },
+  "homepage": "https://github.com/qbreader/qb-answer-checker#readme",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "damerau-levenshtein-js": "^1.1.8",
+    "number-to-words": "^1.2.4",
+    "roman-numerals": "^0.3.2",
+    "stemmer": "^2.0.1"
+  }
+}
