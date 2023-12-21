@@ -1,4 +1,4 @@
-import checkAnswer from 'qb-answer-checker';
+import checkAnswer from '../lib/check-answer.js';
 import * as bcolors from './bcolors.js';
 
 import { assert } from 'chai';
