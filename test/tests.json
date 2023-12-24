@@ -1,6 +1,13 @@
 {
     "formatted": [
         {
+            "answerline": "<b><u>realignments</u></b> [reject \"dealignments\"]",
+            "tests": [
+                { "directive": "accept", "given": "realignments" },
+                { "directive": "reject", "given": "dealignments" }
+            ]
+        },
+        {
             "answerline": "<b><u>dihydroxylation</u></b> [prompt on <b><u>hydroxylation</u></b>]",
             "tests": [
                 { "directive": "accept", "given": "dihydroxylation" },
