@@ -1,6 +1,13 @@
 {
     "formatted": [
         {
+            "answerline": "<b><u>dihydroxylation</u></b> [prompt on <b><u>hydroxylation</u></b>]",
+            "tests": [
+                { "directive": "accept", "given": "dihydroxylation" },
+                { "directive": "prompt", "given": "hydroxylation" }
+            ]
+        },
+        {
             "answerline": "<b><u>Major Major Major</u></b>",
             "tests": [
                 { "directive": "reject", "given": "major tom" }
