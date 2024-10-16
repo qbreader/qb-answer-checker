@@ -1,6 +1,6 @@
 {
   "name": "qb-answer-checker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "A package to automatically check/judge answers against quizbowl answerlines.",
   "main": "lib/check-answer.js",
