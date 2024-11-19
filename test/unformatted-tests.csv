@@ -35,3 +35,4 @@ accept,ir spec,,IR spectroscopy
 accept,adsorption,,adsorption [accept chemisorption or chemical adsorption or physisorption or physical adsorption; prompt on “sorption”; do not accept or prompt on “absorption”]
 reject,absorption,,adsorption [accept chemisorption or chemical adsorption or physisorption or physical adsorption; prompt on “sorption”; do not accept or prompt on “absorption”]
 accept,microscopy,,fluorescence microscopy [prompt on super-resolved microscopy or confocal microscopy]
+accept,rainforest,,(tropical) rainforest,

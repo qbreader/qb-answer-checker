@@ -181,3 +181,4 @@ accept,Eumenides,,"<b><u>Furies</u></b> or <b><u>Erinyes</u></b> [accept <b><u>E
 accept,Semnai,,"<b><u>Furies</u></b> or <b><u>Erinyes</u></b> [accept <b><u>Eumenides</u></b>, <b><u>Semnai</u></b>, or <b><u>Dirae</u></b>]"
 accept,sailor,,<b><u>sailor</u></b> [or al-<b><u>Baḥriyy</u></b>; accept answers like <b><u>seaman</u></b> or <b><u>mariner</u></b> or <b><u>pirate</u></b>; accept <i>The Story of the Shipwrecked </i><i><b><u>Sailor</u></b></i>; prompt on <u>merchant</u>]
 accept,The Story of the Shipwrecked Sailor,,<b><u>sailor</u></b> [or al-<b><u>Baḥriyy</u></b>; accept answers like <b><u>seaman</u></b> or <b><u>mariner</u></b> or <b><u>pirate</u></b>; accept <i>The Story of the Shipwrecked </i><i><b><u>Sailor</u></b></i>; prompt on <u>merchant</u>]
+accept,fairytales,,<b><u>fairy tale</u></b>s [or <b><u>folk tale</u></b>s; prompt on <u>tale</u>s; prompt on short <u>stories</u>]
