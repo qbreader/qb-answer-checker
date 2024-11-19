@@ -1,0 +1,183 @@
+Directive,Given,Directed Prompt,Answer Line
+accept,realignments,,"<b><u>realignments</u></b> [reject ""dealignments""]"
+reject,dealignments,,"<b><u>realignments</u></b> [reject ""dealignments""]"
+accept,dihydroxylation,,<b><u>dihydroxylation</u></b> [prompt on <b><u>hydroxylation</u></b>]
+prompt,hydroxylation,,<b><u>dihydroxylation</u></b> [prompt on <b><u>hydroxylation</u></b>]
+reject,major tom,,<b><u>Major Major Major</u></b>
+reject,corpus civilis,,<i><b><u>Corpus Juris Civilis</u></b></i> [accept <i><b><u>Body of Civil Law</u></b></i>; accept the <i><b><u>Code of Justinian</u></b></i> or <b><u>Justinian’s Code</u></b>]
+accept,95,,<b><u>95</u></b>
+reject,96,,<b><u>95</u></b>
+accept,1921,,<b><u>1921</u></b>
+reject,1920,,<b><u>1921</u></b>
+accept,1920,,<b><u>1920</u></b>
+reject,1921,,<b><u>1920</u></b>
+prompt,graphic,what other word is in the name of that genre?,<i><b><u>Adventure</u></b></i> [accept <i><b><u>Microsoft Adventure</u></b></i> or <i><b><u>Colossal Cave Adventure</u></b></i>; accept graphic <b><u>adventure</u></b>s; prompt on <u>graphic</u> with “what other word is in the name of that genre?”]
+accept,space walk,,<b><u>spacewalk</u></b>s
+accept,spacewalk,,<b><u>spacewalk</u></b>s
+accept,ww2,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+accept,wwii,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+accept,world war 2,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+accept,world war two,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+accept,second world war,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+accept,world war ii,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+reject,wwi,,<b><u>World War two</u></b> [or <b><u>World War ii</u></b>]
+accept,wwi,,<b><u>World War I</u></b>
+accept,world war 1,,<b><u>World War I</u></b>
+accept,world war one,,<b><u>World War I</u></b>
+accept,first world war,,<b><u>World War I</u></b>
+accept,great war,,<b><u>World War I</u></b>
+reject,world war ii,,<b><u>World War I</u></b>
+accept,21 cm,,<b><u>21</u></b> cm line [prompt on the hydrogen line before mention]
+accept,21 centimeter,,<b><u>21</u></b> cm line [prompt on the hydrogen line before mention]
+accept,2nd punic,,<b><u>Second Punic</u></b> War [prompt on <b><u>Punic</u></b> Wars; prompt on <b><u>Carthaginian</u></b> Wars]
+prompt,punic,,<b><u>Second Punic</u></b> War [prompt on <b><u>Punic</u></b> Wars; prompt on <b><u>Carthaginian</u></b> Wars]
+accept,wave function,,<b><u>wavefunction</u></b> [or <b><u>psi</u></b> before mention]
+accept,wavefunction,,<b><u>wavefunction</u></b> [or <b><u>psi</u></b> before mention]
+accept,mice,,<b><u>Mouse</u></b>
+accept,thomson,,"William <b><u>Thomson</u></b>, 1st Baron Lord <b><u>Kelvin</u></b> [Accept either underlined part]"
+accept,kelvin,,"William <b><u>Thomson</u></b>, 1st Baron Lord <b><u>Kelvin</u></b> [Accept either underlined part]"
+prompt,yugoslav war,,<b><u>Bosnian War</u></b> [prompt on “Yugoslav War(s)”]
+accept,1984,,<b><u>Nineteen Eighty-Four</u></b>
+accept,Nineteen Eighty-Four,,<b><u>Nineteen Eighty-Four</u></b>
+accept,antivax,,"<b><u>anti-vaccination</u></b> sentiment [accept <b><u>anti-vax</u></b> sentiment or <b><u>anti-vaxxer</u></b>s; accept <b><u>vaccine hesitancy</u></b> before “hesitant” is read; accept answers expressing the idea that <b><u>vaccines are harmful</u></b>, that the MMR <b><u>vaccine causes autism</u></b>, or that the hepatitis B <b><u>vaccine causes multiple sclerosis</u></b>; accept “immunization” in place of “vaccination” until read; prompt on <u>medical distrust</u>]"
+accept,anti-vaccination,,"<b><u>anti-vaccination</u></b> sentiment [accept <b><u>anti-vax</u></b> sentiment or <b><u>anti-vaxxer</u></b>s; accept <b><u>vaccine hesitancy</u></b> before “hesitant” is read; accept answers expressing the idea that <b><u>vaccines are harmful</u></b>, that the MMR <b><u>vaccine causes autism</u></b>, or that the hepatitis B <b><u>vaccine causes multiple sclerosis</u></b>; accept “immunization” in place of “vaccination” until read; prompt on <u>medical distrust</u>]"
+accept,Chopin,,Frédéric (François) <b><u>Chopin</u></b> [or Fryderyk (Franciszek) <b><u>Szopen</u></b>]
+accept,Szopen,,Frédéric (François) <b><u>Chopin</u></b> [or Fryderyk (Franciszek) <b><u>Szopen</u></b>]
+prompt,igbo,of what status?,<b><u>slave</u></b>s [or <b><u>enslaved</u></b> people or <b><u>slavery</u></b>; accept <b><u>slave</u></b> narratives or<i></i> <i><b><u>Slave</u></b> Narrative Collection</i>; prompt on <u>African</u>-Americans or <u>Black</u> people or specific groups of Africans such as <u>Igbo</u> by asking “of what status?”; prompt on <u>child</u>ren or <u>boy</u>s or <u>girl</u>s; prompt on plantation <u>worker</u>s or house <u>servant</u>s] (The “landing” is Igbo Landing.)
+prompt,black,of what status?,<b><u>slave</u></b>s [or <b><u>enslaved</u></b> people or <b><u>slavery</u></b>; accept <b><u>slave</u></b> narratives or<i></i> <i><b><u>Slave</u></b> Narrative Collection</i>; prompt on <u>African</u>-Americans or <u>Black</u> people or specific groups of Africans such as <u>Igbo</u> by asking “of what status?”; prompt on <u>child</u>ren or <u>boy</u>s or <u>girl</u>s; prompt on plantation <u>worker</u>s or house <u>servant</u>s] (The “landing” is Igbo Landing.)
+prompt,child,,<b><u>slave</u></b>s [or <b><u>enslaved</u></b> people or <b><u>slavery</u></b>; accept <b><u>slave</u></b> narratives or<i></i> <i><b><u>Slave</u></b> Narrative Collection</i>; prompt on <u>African</u>-Americans or <u>Black</u> people or specific groups of Africans such as <u>Igbo</u> by asking “of what status?”; prompt on <u>child</u>ren or <u>boy</u>s or <u>girl</u>s; prompt on plantation <u>worker</u>s or house <u>servant</u>s] (The “landing” is Igbo Landing.)
+prompt,boys,,<b><u>slave</u></b>s [or <b><u>enslaved</u></b> people or <b><u>slavery</u></b>; accept <b><u>slave</u></b> narratives or<i></i> <i><b><u>Slave</u></b> Narrative Collection</i>; prompt on <u>African</u>-Americans or <u>Black</u> people or specific groups of Africans such as <u>Igbo</u> by asking “of what status?”; prompt on <u>child</u>ren or <u>boy</u>s or <u>girl</u>s; prompt on plantation <u>worker</u>s or house <u>servant</u>s] (The “landing” is Igbo Landing.)
+prompt,girl,,<b><u>slave</u></b>s [or <b><u>enslaved</u></b> people or <b><u>slavery</u></b>; accept <b><u>slave</u></b> narratives or<i></i> <i><b><u>Slave</u></b> Narrative Collection</i>; prompt on <u>African</u>-Americans or <u>Black</u> people or specific groups of Africans such as <u>Igbo</u> by asking “of what status?”; prompt on <u>child</u>ren or <u>boy</u>s or <u>girl</u>s; prompt on plantation <u>worker</u>s or house <u>servant</u>s] (The “landing” is Igbo Landing.)
+reject,of what status,,<b><u>slave</u></b>s [or <b><u>enslaved</u></b> people or <b><u>slavery</u></b>; accept <b><u>slave</u></b> narratives or<i></i> <i><b><u>Slave</u></b> Narrative Collection</i>; prompt on <u>African</u>-Americans or <u>Black</u> people or specific groups of Africans such as <u>Igbo</u> by asking “of what status?”; prompt on <u>child</u>ren or <u>boy</u>s or <u>girl</u>s; prompt on plantation <u>worker</u>s or house <u>servant</u>s] (The “landing” is Igbo Landing.)
+accept,Louis 14,,<b><u>Louis XIV</u></b> [prompt on <u>Louis</u> alone; prompt on the <u>Sun King</u> or le <u>Roi Soleil</u>]
+accept,Louis XIV,,<b><u>Louis XIV</u></b> [prompt on <u>Louis</u> alone; prompt on the <u>Sun King</u> or le <u>Roi Soleil</u>]
+prompt,Louis,,<b><u>Louis XIV</u></b> [prompt on <u>Louis</u> alone; prompt on the <u>Sun King</u> or le <u>Roi Soleil</u>]
+accept,Louis XIV,,<b><u>Louis 14</u></b>
+accept,0,,<b><u>0</u></b>
+accept,zero,,<b><u>0</u></b>
+accept,0,,<b><u>zero</u></b>
+accept,zero,,<b><u>zero</u></b>
+accept,Invisible Man,,<b><u>Invisible Man</u></b> [do not accept or prompt on “The Invisible Man”]
+reject,The Invisible Man,,<b><u>Invisible Man</u></b> [do not accept or prompt on “The Invisible Man”]
+accept,resistivity,,<b><u>resistivity</u></b> [reject “resistance”]
+reject,resistance,,<b><u>resistivity</u></b> [reject “resistance”]
+accept,Seven Years,,<b><u>Seven Years’</u></b> War [accept the <b><u>French and Indian</u></b> War; accept <b><u>Third Carnatic</u></b> War]
+accept,other,,<b><u>other</u></b> [accept <i>The <b><u>Other</u></b> America: Poverty in the United States</i>; accept <i>How the <b><u>Other</u></b> Half Lives: Studies among the Tenements of New York</i>]
+accept,mitochondria,,<b><u>mitochondria</u></b> [or <b><u>mitochondrion</u></b>]
+reject,carbon,,<b><u>calcium</u></b> [or <b><u>Ca</u></b>; accept <b><u>calcination</u></b> or <b><u>calciner</u></b>]
+accept,binary fission,,"<b><u>binary fission</u></b> [accept <b><u>mitochondrial fission</u></b> until “Drp1” is read, but prompt after; prompt on <u>fission</u>, <u>fission yeast</u>, <u>cytokinesis</u>, or <u>cell division</u>; do not accept or prompt on “mitosis” or “meiosis” or “multiple fission”]"
+prompt,cytokinesis,,"<b><u>binary fission</u></b> [accept <b><u>mitochondrial fission</u></b> until “Drp1” is read, but prompt after; prompt on <u>fission</u>, <u>fission yeast</u>, <u>cytokinesis</u>, or <u>cell division</u>; do not accept or prompt on “mitosis” or “meiosis” or “multiple fission”]"
+accept,socialist,,[French] <b><u>Socialist</u></b> Party [or Parti <b><u>Socialiste</u></b>; accept <b><u>Socialists</u></b>; prompt on “PS”]
+prompt,ps,,[French] <b><u>Socialist</u></b> Party [or Parti <b><u>Socialiste</u></b>; accept <b><u>Socialists</u></b>; prompt on “PS”]
+accept,Democrat to Republican,,"switching from <u>Democrat to Republican</u> (accept equivalent answers; prompt on “switching parties” by asking, from “which party to which party?”)"
+accept,from Democrat to Republican,,"switching from <u>Democrat to Republican</u> (accept equivalent answers; prompt on “switching parties” by asking, from “which party to which party?”)"
+prompt,switching parties,which party to which party?,"switching from <u>Democrat to Republican</u> (accept equivalent answers; prompt on “switching parties” by asking, from “which party to which party?”)"
+accept,Zhu Di,,"<b><u>Zhu Di</u></b> [Accept <b><u>Yongle</u></b> Emperor, <b><u>Chengzu</u></b> Emperor of <b><u>Ming</u></b>, or <b><u>Taizong</u></b> Emperor of <b><u>Ming</u></b>; Prompt on <u>Prince of Yan</u>]"
+accept,Yongle,,"<b><u>Zhu Di</u></b> [Accept <b><u>Yongle</u></b> Emperor, <b><u>Chengzu</u></b> Emperor of <b><u>Ming</u></b>, or <b><u>Taizong</u></b> Emperor of <b><u>Ming</u></b>; Prompt on <u>Prince of Yan</u>]"
+accept,Yongle Emperor,,"<b><u>Zhu Di</u></b> [Accept <b><u>Yongle</u></b> Emperor, <b><u>Chengzu</u></b> Emperor of <b><u>Ming</u></b>, or <b><u>Taizong</u></b> Emperor of <b><u>Ming</u></b>; Prompt on <u>Prince of Yan</u>]"
+accept,Taizong of Ming,,"<b><u>Zhu Di</u></b> [Accept <b><u>Yongle</u></b> Emperor, <b><u>Chengzu</u></b> Emperor of <b><u>Ming</u></b>, or <b><u>Taizong</u></b> Emperor of <b><u>Ming</u></b>; Prompt on <u>Prince of Yan</u>]"
+prompt,Prince of Yan,,"<b><u>Zhu Di</u></b> [Accept <b><u>Yongle</u></b> Emperor, <b><u>Chengzu</u></b> Emperor of <b><u>Ming</u></b>, or <b><u>Taizong</u></b> Emperor of <b><u>Ming</u></b>; Prompt on <u>Prince of Yan</u>]"
+reject,Zhu,,"<b><u>Zhu Di</u></b> [Accept <b><u>Yongle</u></b> Emperor, <b><u>Chengzu</u></b> Emperor of <b><u>Ming</u></b>, or <b><u>Taizong</u></b> Emperor of <b><u>Ming</u></b>; Prompt on <u>Prince of Yan</u>]"
+accept,fire,,<b><u>fir</u></b>es (accept <b><u>flam</u></b>es; accept <b><u>Atash</u></b> before it is read; accept <b><u>atar</u></b> or <b><u>adar</u></b> before “Atar” is read; accept <b><u>athra</u></b>; accept <b><u>atarsh</u></b>)
+accept,flame,,<b><u>fir</u></b>es (accept <b><u>flam</u></b>es; accept <b><u>Atash</u></b> before it is read; accept <b><u>atar</u></b> or <b><u>adar</u></b> before “Atar” is read; accept <b><u>athra</u></b>; accept <b><u>atarsh</u></b>)
+accept,flames,,<b><u>fir</u></b>es (accept <b><u>flam</u></b>es; accept <b><u>Atash</u></b> before it is read; accept <b><u>atar</u></b> or <b><u>adar</u></b> before “Atar” is read; accept <b><u>athra</u></b>; accept <b><u>atarsh</u></b>)
+accept,Atash,,<b><u>fir</u></b>es (accept <b><u>flam</u></b>es; accept <b><u>Atash</u></b> before it is read; accept <b><u>atar</u></b> or <b><u>adar</u></b> before “Atar” is read; accept <b><u>athra</u></b>; accept <b><u>atarsh</u></b>)
+accept,Iraq,,Republic of <b><u>Iraq</u></b>
+reject,Iran,,Republic of <b><u>Iraq</u></b>
+accept,Dr. Zhivago,,<b><u>Doctor Zhivago</u></b>
+accept,Dr Zhivago,,<b><u>Doctor Zhivago</u></b>
+reject,Dr,,<b><u>Doctor Zhivago</u></b>
+accept,Doctor Zhivago,,<b><u>Doctor Zhivago</u></b>
+accept,Cabinet of Dr. Caligari,,The <b><u>Cabinet of Dr. Caligari</u></b> [or Das <b><u>Cabinet des Dr. Caligari</u></b>]
+accept,Cabinet of Doctor Caligari,,The <b><u>Cabinet of Dr. Caligari</u></b> [or Das <b><u>Cabinet des Dr. Caligari</u></b>]
+accept,codc,,The <b><u>Cabinet of Dr. Caligari</u></b> [or Das <b><u>Cabinet des Dr. Caligari</u></b>]
+accept,tcodc,,The <b><u>Cabinet of Dr. Caligari</u></b> [or Das <b><u>Cabinet des Dr. Caligari</u></b>]
+accept,Jasper Johns,,Jasper <b><u>Johns</u></b>
+accept,Johns,,Jasper <b><u>Johns</u></b>
+reject,Jasper,,Jasper <b><u>Johns</u></b>
+reject,Jo,,Jasper <b><u>Johns</u></b>
+accept,manchester,,<b><u>Manchester</u></b>
+accept,MANCHESTER,,<b><u>Manchester</u></b>
+reject,London,,<b><u>Manchester</u></b>
+accept,dampers,,<b><u>damper</u></b>s [or <b><u>dashpot</u></b>s; accept (tuned) mass <b><u>damper</u></b>s]
+accept,dashpot,,<b><u>damper</u></b>s [or <b><u>dashpot</u></b>s; accept (tuned) mass <b><u>damper</u></b>s]
+accept,tuned mass dampers,,<b><u>damper</u></b>s [or <b><u>dashpot</u></b>s; accept (tuned) mass <b><u>damper</u></b>s]
+accept,Munro,,"Alice <b><u>Munro</u></b> [or Alice Ann <b><u>Munro</u></b> or Alice Ann <b><u>Laidlaw</u></b>] (The first two stories are “The Progress of Love” and “Hateship, Friendship, Courtship, Loveship, Marriage.”)"
+accept,Alice Munro,,"Alice <b><u>Munro</u></b> [or Alice Ann <b><u>Munro</u></b> or Alice Ann <b><u>Laidlaw</u></b>] (The first two stories are “The Progress of Love” and “Hateship, Friendship, Courtship, Loveship, Marriage.”)"
+prompt,light,,<b><u>light pollution</u></b> [accept <b><u>sky glow</u></b> or <b><u>glare</u></b>; prompt on artificial <u>light</u>] (The Znamya project created large mirrors intended to light up the night.)
+accept,light pollution,,<b><u>light pollution</u></b> [accept <b><u>sky glow</u></b> or <b><u>glare</u></b>; prompt on artificial <u>light</u>] (The Znamya project created large mirrors intended to light up the night.)
+reject,pollution,,<b><u>light pollution</u></b> [accept <b><u>sky glow</u></b> or <b><u>glare</u></b>; prompt on artificial <u>light</u>] (The Znamya project created large mirrors intended to light up the night.)
+reject,Desert,,<b><u>Sahara</u></b> Desert [or aṣ-<b><u>Ṣaḥrāʾ al-Kubrā</u></b> or <b><u>Aneẓruf</u></b> <b><u>Ameqran</u></b>; accept <b><u>Deshret</u></b>; accept Nilo-<b><u>Saharan</u></b> languages; accept <b><u>Tibesti</u></b> Mountains or <b><u>Tassili</u></b> n’Ajjer or <b><u>Aïr</u></b> Mountains until read; accept the <b><u>Fezzan</u></b> or <b><u>Illizi</u></b> or <b><u>Hoggar</u></b> Mountains or <b><u>Ahaggar</u></b> or <b><u>Tanezrouft</u></b> or <b><u>Grand Erg</u></b> Oriental; accept <b><u>Ténéré</u></b> until “Tenerian”; prompt on <u>Algeria</u> or <u>Chad</u> or <u>Libya</u> or <u>Niger</u> or <u>Egypt</u>; prompt on North <u>Africa</u> or <u>Maghreb</u>]
+accept,chimpanzee,,"<b><u>primatology</u></b> [or word forms; accept any answers about the study of great <b><u>ape</u></b>s, nonhuman <b><u>primate</u></b>s, <b><u>gorilla</u></b>s, <b><u>bonobo</u></b>s, or <b><u>chimp</u></b>anzees; prompt on the study of <u>monkey</u>s or <u>simian</u>s; prompt on word forms of <u>ethology</u>, <u>biology</u>, <u>anthropology</u>, or evolutionary or social <u>psychology</u>; prompt on the study of <u>animal</u>s with “what type of animals?”]"
+accept,chimp,,"<b><u>primatology</u></b> [or word forms; accept any answers about the study of great <b><u>ape</u></b>s, nonhuman <b><u>primate</u></b>s, <b><u>gorilla</u></b>s, <b><u>bonobo</u></b>s, or <b><u>chimp</u></b>anzees; prompt on the study of <u>monkey</u>s or <u>simian</u>s; prompt on word forms of <u>ethology</u>, <u>biology</u>, <u>anthropology</u>, or evolutionary or social <u>psychology</u>; prompt on the study of <u>animal</u>s with “what type of animals?”]"
+accept,boll,,Heinrich <b><u>Böll</u></b> [or Heinrich Theodor <b><u>Böll</u></b>]
+accept,heinrich boll,,Heinrich <b><u>Böll</u></b> [or Heinrich Theodor <b><u>Böll</u></b>]
+accept,Böll,,Heinrich <b><u>Böll</u></b> [or Heinrich Theodor <b><u>Böll</u></b>]
+accept,Heinrich Böll,,Heinrich <b><u>Böll</u></b> [or Heinrich Theodor <b><u>Böll</u></b>]
+accept,Louis-Philippe,,<b><u>Louis-Philippe</u></b> [or <b><u>Duke d’Orleans</u></b>; prompt on “Citizen King” before mentioned]
+prompt,Citizen King,,<b><u>Louis-Philippe</u></b> [or <b><u>Duke d’Orleans</u></b>; prompt on “Citizen King” before mentioned]
+reject,Louis,,<b><u>Louis-Philippe</u></b> [or <b><u>Duke d’Orleans</u></b>; prompt on “Citizen King” before mentioned]
+reject,Philippe,,<b><u>Louis-Philippe</u></b> [or <b><u>Duke d’Orleans</u></b>; prompt on “Citizen King” before mentioned]
+accept,Tserclaes,,"Johann <b><u>Tserclaes</u></b>, Graf von <b><u>Tilly</u></b> (accept either underlined answer as well as Count of <b><u>Tilly</u></b>)"
+accept,Tilly,,"Johann <b><u>Tserclaes</u></b>, Graf von <b><u>Tilly</u></b> (accept either underlined answer as well as Count of <b><u>Tilly</u></b>)"
+accept,Count of Tilly,,"Johann <b><u>Tserclaes</u></b>, Graf von <b><u>Tilly</u></b> (accept either underlined answer as well as Count of <b><u>Tilly</u></b>)"
+accept,Baumer,,<b><u>Paul Bäumer</u></b> [accept either name]
+accept,Bäumer,,<b><u>Paul Bäumer</u></b> [accept either name]
+accept,Paul,,<b><u>Paul Bäumer</u></b> [accept either name]
+accept,Paul Bäumer,,<b><u>Paul Bäumer</u></b> [accept either name]
+accept,Baumer,,<b><u>Paul</u></b> <b><u>Bäumer</u></b> [accept either name]
+accept,Bäumer,,<b><u>Paul</u></b> <b><u>Bäumer</u></b> [accept either name]
+accept,Paul,,<b><u>Paul</u></b> <b><u>Bäumer</u></b> [accept either name]
+accept,Paul Bäumer,,<b><u>Paul</u></b> <b><u>Bäumer</u></b> [accept either name]
+accept,Basho,,<b><u>Matsuo</u></b> <b><u>Bashō</u></b> [accept either underlined part; accept <b><u>Matsuo</u></b> Kinsaku or <b><u>Matsuo</u></b> Chūemon Munefusa]
+accept,Bashō,,<b><u>Matsuo</u></b> <b><u>Bashō</u></b> [accept either underlined part; accept <b><u>Matsuo</u></b> Kinsaku or <b><u>Matsuo</u></b> Chūemon Munefusa]
+accept,Matsuo,,<b><u>Matsuo</u></b> <b><u>Bashō</u></b> [accept either underlined part; accept <b><u>Matsuo</u></b> Kinsaku or <b><u>Matsuo</u></b> Chūemon Munefusa]
+accept,Matsuo Basho,,<b><u>Matsuo</u></b> <b><u>Bashō</u></b> [accept either underlined part; accept <b><u>Matsuo</u></b> Kinsaku or <b><u>Matsuo</u></b> Chūemon Munefusa]
+accept,Matsuo Bashō,,<b><u>Matsuo</u></b> <b><u>Bashō</u></b> [accept either underlined part; accept <b><u>Matsuo</u></b> Kinsaku or <b><u>Matsuo</u></b> Chūemon Munefusa]
+accept,prime minister of australia,,<b><u>Prime Minister</u></b> of <b><u>Australia</u></b> [prompt on partial answers]
+accept,australia prime minister,,<b><u>Prime Minister</u></b> of <b><u>Australia</u></b> [prompt on partial answers]
+accept,australian prime minister,,<b><u>Prime Minister</u></b> of <b><u>Australia</u></b> [prompt on partial answers]
+prompt,prime minister,,<b><u>Prime Minister</u></b> of <b><u>Australia</u></b> [prompt on partial answers]
+accept,hypothesis testing,,hypothesis <b><u>test</u></b>
+accept,testing,,hypothesis <b><u>test</u></b>
+accept,test,,hypothesis <b><u>test</u></b>
+accept,graphene,,"<b><u>graphene</u></b> [do not accept or prompt on ""graphite""]"
+reject,graphite,,"<b><u>graphene</u></b> [do not accept or prompt on ""graphite""]"
+accept,amides,,"<b><u>amide</u></b>s [do not accept or prompt on ""amines""]"
+accept,amide,,"<b><u>amide</u></b>s [do not accept or prompt on ""amines""]"
+reject,amine,,"<b><u>amide</u></b>s [do not accept or prompt on ""amines""]"
+reject,amines,,"<b><u>amide</u></b>s [do not accept or prompt on ""amines""]"
+accept,cosmic microwave background radiation,,<b><u>cosmic microwave background</u></b> radiation [or <b><u>CMB</u></b>; or <b><u>CMBR</u></b>]
+accept,cosmic microwave background,,<b><u>cosmic microwave background</u></b> radiation [or <b><u>CMB</u></b>; or <b><u>CMBR</u></b>]
+accept,cmb,,<b><u>cosmic microwave background</u></b> radiation [or <b><u>CMB</u></b>; or <b><u>CMBR</u></b>]
+accept,cmbr,,<b><u>cosmic microwave background</u></b> radiation [or <b><u>CMB</u></b>; or <b><u>CMBR</u></b>]
+accept,1980s,,<b><u>1980s</u></b> [prompt on <u>80s</u>]
+accept,1980,,<b><u>1980s</u></b> [prompt on <u>80s</u>]
+prompt,80,,<b><u>1980s</u></b> [prompt on <u>80s</u>]
+prompt,80s,,<b><u>1980s</u></b> [prompt on <u>80s</u>]
+reject,90s,,<b><u>1980s</u></b> [prompt on <u>80s</u>]
+reject,90,,<b><u>1980s</u></b> [prompt on <u>80s</u>]
+accept,working memory,,<u>working memory</u> [prompt on partial answers or on “short-term memory”]
+prompt,memory,,<u>working memory</u> [prompt on partial answers or on “short-term memory”]
+accept,Tchaikovsky Piano Concerto no 1,,Pyotr Ilyich <b><u>Tchaikovsky</u></b>’s <b><u>Piano Concerto</u></b> No. <b><u>1</u></b> [accept <b><u>Tchaikovsky</u></b>’s <b><u>PianoConcerto</u></b> in <b><u>B-flat</u></b> <b><u>minor</u></b> until “B-flat” is read; accept word forms like <b><u>Tchaikovsky</u></b>’s <b><u>first piano concerto</u></b>; prompt on partial answer]
+accept,Endeavor,,"<b><u>Space Shuttle</u></b> [or <b><u>Space Transportation System</u></b>; or <b><u>STS</u></b>; prompt on US <u>space</u> flight or <u>NASA</u>; anti-prompt on <u>Challenger</u> Disaster or <u>Columbia</u> Disaster by asking ""What larger NASA program was it a part of?""; anti-prompt on <u>Endeavor</u> by asking ""What larger NASA program was it a part of?""]"
+prompt,NASA,,"<b><u>Space Shuttle</u></b> [or <b><u>Space Transportation System</u></b>; or <b><u>STS</u></b>; prompt on US <u>space</u> flight or <u>NASA</u>; anti-prompt on <u>Challenger</u> Disaster or <u>Columbia</u> Disaster by asking ""What larger NASA program was it a part of?""; anti-prompt on <u>Endeavor</u> by asking ""What larger NASA program was it a part of?""]"
+accept,second contentinal congress,,<b><u>Second Continental Congress</u></b> [prompt on <u>Continental Congress</u>]
+accept,Eucharist bread,,sacramental <b><u>bread</u></b> [accept the <b><u>host</u></b>; prompt on <u>Eucharist</u>; prompt on <u>food</u>]
+accept,wasteland,,The <b><u>Wasteland</u></b>
+reject,waste,,The <b><u>Wasteland</u></b>
+accept,wto,,<b><u>W</u></b>orld <b><u>T</u></b>rade <b><u>O</u></b>rganization
+accept,grail,,The (Holy) <b><u>Grail</u></b>
+accept,holy grail,,The (Holy) <b><u>Grail</u></b>
+accept,coagulation,,<b><u>coagulation</u></b> or blood <b><u>clotting</u></b>
+accept,clotting,,<b><u>coagulation</u></b> or blood <b><u>clotting</u></b>
+accept,blood clotting,,<b><u>coagulation</u></b> or blood <b><u>clotting</u></b>
+accept,golden apple,,<b><u>golden apples </u></b> [prompt on a partial answer]
+prompt,apples,,<b><u>golden apples </u></b> [prompt on a partial answer]
+prompt,apple,,<b><u>golden apples </u></b> [prompt on a partial answer]
+accept,Furies,,"<b><u>Furies</u></b> or <b><u>Erinyes</u></b> [accept <b><u>Eumenides</u></b>, <b><u>Semnai</u></b>, or <b><u>Dirae</u></b>]"
+accept,Erinyes,,"<b><u>Furies</u></b> or <b><u>Erinyes</u></b> [accept <b><u>Eumenides</u></b>, <b><u>Semnai</u></b>, or <b><u>Dirae</u></b>]"
+accept,Eumenides,,"<b><u>Furies</u></b> or <b><u>Erinyes</u></b> [accept <b><u>Eumenides</u></b>, <b><u>Semnai</u></b>, or <b><u>Dirae</u></b>]"
+accept,Semnai,,"<b><u>Furies</u></b> or <b><u>Erinyes</u></b> [accept <b><u>Eumenides</u></b>, <b><u>Semnai</u></b>, or <b><u>Dirae</u></b>]"
+accept,sailor,,<b><u>sailor</u></b> [or al-<b><u>Baḥriyy</u></b>; accept answers like <b><u>seaman</u></b> or <b><u>mariner</u></b> or <b><u>pirate</u></b>; accept <i>The Story of the Shipwrecked </i><i><b><u>Sailor</u></b></i>; prompt on <u>merchant</u>]
+accept,The Story of the Shipwrecked Sailor,,<b><u>sailor</u></b> [or al-<b><u>Baḥriyy</u></b>; accept answers like <b><u>seaman</u></b> or <b><u>mariner</u></b> or <b><u>pirate</u></b>; accept <i>The Story of the Shipwrecked </i><i><b><u>Sailor</u></b></i>; prompt on <u>merchant</u>]

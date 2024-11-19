@@ -1,56 +1,49 @@
 import checkAnswer from '../lib/check-answer.js';
-import * as bcolors from './bcolors.js';
 
-import { assert } from 'chai';
-import mocha from 'mocha';
-import { createRequire } from 'module';
+import fs from 'fs';
+import csv from 'jquery-csv';
 
-const require = createRequire(import.meta.url);
-const tests = require('./tests.json');
-
-function errorText(text) {
-    // Colors text red
-    return `${bcolors.FAIL}${text}${bcolors.ENDC}`;
+function loadTests(filepath) {
+    const content = fs.readFileSync(filepath, 'utf-8').split('\n').slice(1);
+    return csv.toArrays(content.join('\n'));
 }
 
-function answerlineTest(group) {
-    let successful = 0, total = 0;
-    const answerline = group.answerline;
-    mocha.describe(`Answerline Test: ${answerline}`, function () {
-        group.tests.forEach((test) => {
-            const expected = test.directive;
-            const givenAnswer = test.given;
-            const expectedDirectedPrompt = test.directedPrompt;
-            const { directive, directedPrompt } = checkAnswer(answerline, givenAnswer);
-            total++;
-            // Assertions will *supposedly* auto return when this fails.
-            mocha.it('directive check', () => assert.strictEqual(directive, expected, errorText(`directive for ${givenAnswer}`)));
-            if (expectedDirectedPrompt || directedPrompt) {
-                mocha.it('directive prompt check', () => assert.strictEqual(directedPrompt, expectedDirectedPrompt, errorText(`directive prompt for ${givenAnswer}`)));
-            }
-            successful++;
-        });
-    });
-    return  { successful, total };
+function runTest(directive, given, directedPrompt, answerline, index) {
+    const result = checkAnswer(answerline, given);
+    if (result.directedPrompt === undefined) {
+        result.directedPrompt = '';
+    }
+
+    const passed = result.directive === directive && result.directedPrompt === directedPrompt;
+    if (!passed) {
+        console.log(`${index}: Expected ${directive}, ${directedPrompt} but got ${result.directive}, ${result.directedPrompt}`);
+        console.log(`Given: ${given} Answerline: ${answerline}`);
+        checkAnswer(answerline, given, 7, true);
+    }
+    return passed;
 }
 
-
-function testAnswerType(type, count = -1) {
-    let successful = 0, total = 0;
-    mocha.describe(`${type} Answer Testing`, function () {
-        if (count > 0) {
-            tests[type].splice(count);
-        }
-        tests[type].forEach(function (group) {
-            const { successful: s, total: t } = answerlineTest(group);
-            successful += s;
-            total += t;
-        });
-    });
-    return successful === total;
+/**
+ *
+ * @param {string[4]} tests
+ */
+function runTests(tests) {
+    const startTime = Date.now();
+    let numberPassed = 0;
+    for (let index = 0; index < tests.length; index++) {
+        const [directive, given, directedPrompt, answerline] = tests[index];
+        const passed = runTest(directive, given, directedPrompt, answerline, index + 2);
+        if (passed) { numberPassed++; }
+    }
+    const timeElapsed = Date.now() - startTime;
+    const numberFailed = tests.length - numberPassed;
+    console.log(`Passed: ${numberPassed}, Failed: ${numberFailed} (${timeElapsed} ms)`);
+    return numberFailed;
 }
 
-const count = -1;
+let status = 0;
+status += runTests(loadTests('./test/formatted-tests.csv'));
+status += runTests(loadTests('./test/unformatted-tests.csv'));
 
-testAnswerType('formatted', count);
-testAnswerType('unformatted', count);
+// set status code equal to the number of failed tests
+process.exit(status);

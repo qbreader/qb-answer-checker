@@ -1,0 +1,37 @@
+Directive,Given,Directed Prompt,Answer Line
+accept,0,,0
+accept,zero,,0
+accept,0,,zero
+accept,zero,,zero
+accept,fire,,fires (accept flames; accept Atash before it is read; accept atar or adar before “Atar” is read; accept athra; accept atarsh)
+accept,flame,,fires (accept flames; accept Atash before it is read; accept atar or adar before “Atar” is read; accept athra; accept atarsh)
+accept,flames,,fires (accept flames; accept Atash before it is read; accept atar or adar before “Atar” is read; accept athra; accept atarsh)
+accept,Atash,,fires (accept flames; accept Atash before it is read; accept atar or adar before “Atar” is read; accept athra; accept atarsh)
+accept,boll,,Heinrich Böll [or Heinrich Theodor Böll]
+accept,heinrich boll,,Heinrich Böll [or Heinrich Theodor Böll]
+accept,Böll,,Heinrich Böll [or Heinrich Theodor Böll]
+accept,Heinrich Böll,,Heinrich Böll [or Heinrich Theodor Böll]
+reject,H,,Heinrich Böll [or Heinrich Theodor Böll]
+accept,chimp,,"primatology [or word forms; accept any answers about the study of great apes, nonhuman primates, gorillas, bonobos, or chimpanzees; prompt on the study of monkeys or simians; prompt on word forms of ethology, biology, anthropology, or evolutionary or social psychology; prompt on the study of animals with “what type of animals?”]"
+accept,chimpanzee,,"primatology [or word forms; accept any answers about the study of great apes, nonhuman primates, gorillas, bonobos, or chimpanzees; prompt on the study of monkeys or simians; prompt on word forms of ethology, biology, anthropology, or evolutionary or social psychology; prompt on the study of animals with “what type of animals?”]"
+accept,China,,China [or People’s Republic of China; do not accept or prompt on “Republic of China”]
+reject,republic of china,,China [or People’s Republic of China; do not accept or prompt on “Republic of China”]
+accept,amides,,"amides [do not accept or prompt on ""amines""]"
+accept,amide,,"amides [do not accept or prompt on ""amines""]"
+reject,amine,,"amides [do not accept or prompt on ""amines""]"
+accept,baader meinhof,,"RAF [or Red Army Faction; accept Baader–Meinhof group; accept Baader–Meinhof gang; accept Rote Armee Fraktion] (The Action Directe communiqué was also signed “kommando elisabeth van dyck,” in reference to a fallen member of RAF.)"
+accept,raf,,"RAF [or Red Army Faction; accept Baader–Meinhof group; accept Baader–Meinhof gang; accept Rote Armee Fraktion] (The Action Directe communiqué was also signed “kommando elisabeth van dyck,” in reference to a fallen member of RAF.)"
+accept,red army faction,,"RAF [or Red Army Faction; accept Baader–Meinhof group; accept Baader–Meinhof gang; accept Rote Armee Fraktion] (The Action Directe communiqué was also signed “kommando elisabeth van dyck,” in reference to a fallen member of RAF.)"
+accept,red army,,"RAF [or Red Army Faction; accept Baader–Meinhof group; accept Baader–Meinhof gang; accept Rote Armee Fraktion] (The Action Directe communiqué was also signed “kommando elisabeth van dyck,” in reference to a fallen member of RAF.)"
+accept,lenski long term e coli experiment,,Lenski's long-term E. coli evolution experiment [accept anything mentioning the long term evolution of E. Coli]
+accept,time,,time [accept time-like interval; prompt on T]
+accept,defenestration,,defenestration [prompt on “falling”; accept reasonable equivalents like “jumping out of a window” or “being thrown out of a window”; prompt on “suicide”]
+accept,jump out of a window,,defenestration [prompt on “falling”; accept reasonable equivalents like “jumping out of a window” or “being thrown out of a window”; prompt on “suicide”]
+accept,jumping out of a window,,defenestration [prompt on “falling”; accept reasonable equivalents like “jumping out of a window” or “being thrown out of a window”; prompt on “suicide”]
+accept,wave-particle duality,,wave-particle duality [accept de Broglie wave until “de Broglie”; accept answers indicating that something is both a wave and a particle; prompt on duality or wave nature or complementarity; prompt on interference by asking “what property of matter causes the interference?”]
+prompt,interference,what property of matter causes the interference?,wave-particle duality [accept de Broglie wave until “de Broglie”; accept answers indicating that something is both a wave and a particle; prompt on duality or wave nature or complementarity; prompt on interference by asking “what property of matter causes the interference?”]
+accept,September 1 1939,,"“September 1, 1939”"
+accept,ir spec,,IR spectroscopy
+accept,adsorption,,adsorption [accept chemisorption or chemical adsorption or physisorption or physical adsorption; prompt on “sorption”; do not accept or prompt on “absorption”]
+reject,absorption,,adsorption [accept chemisorption or chemical adsorption or physisorption or physical adsorption; prompt on “sorption”; do not accept or prompt on “absorption”]
+accept,microscopy,,fluorescence microscopy [prompt on super-resolved microscopy or confocal microscopy]

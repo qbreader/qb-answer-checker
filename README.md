@@ -10,10 +10,10 @@ This section specifies the kind of (quizbowl) answerlines that the program is de
 **Answerlines** should be formatted as follows:
 
 ```
-<main answerline> [<sub-answerline>]
+<main section> [<sub-section>] [<sub-section>]? ...
 ```
 
-where the **sub-answerline** is a string of clauses separated by semicolons of the form:
+where each **section** is a string of **clauses** separated by semicolons of the form:
 
 ```
 (<special directives>;)? <clause> (; <clause>; ...)?
