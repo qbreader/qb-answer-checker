@@ -2,3 +2,5 @@ node_modules
 .vs
 .vscode
 .DS_Store
+
+.env

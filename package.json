@@ -26,7 +26,9 @@
   },
   "dependencies": {
     "damerau-levenshtein-js": "^1.1.8",
+    "dotenv": "^16.4.7",
     "jquery-csv": "^1.0.40",
+    "mongodb": "^6.12.0",
     "number-to-words": "^1.2.4",
     "roman-numerals": "^0.3.2",
     "stemmer": "^2.0.1"
