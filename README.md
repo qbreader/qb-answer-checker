@@ -19,6 +19,8 @@ Alternatively, use a CDN like [JSDelivr](https://www.jsdelivr.com/) to serve the
 import checkAnswer from "https://cdn.jsdelivr.net/npm/qb-answer-checker/dist/main.mjs";
 ```
 
+**Note:** [According to webpack](https://webpack.js.org/configuration/output/#module-definition-systems), this feature is still experimental, but it seems to work fine in modern browsers.
+
 ## Answerline Specification
 
 This section specifies the kind of (quizbowl) answerlines that the program is designed to parse.
