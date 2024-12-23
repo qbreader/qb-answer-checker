@@ -3,6 +3,22 @@
 A package to automatically check/judge answers against quizbowl answerlines.
 Mostly used in conjunction with [qbreader](https://www.qbreader.org/) to automatically check answers.
 
+## Usage
+
+Import the `checkAnswer` function as the default import from `src/check-answer.js`:
+
+```js
+import checkAnswer from "./src/check-answer.js";
+checkAnswer("<b><u>1921</u></b>", 1921);
+// output: { directive: 'accept', directedPrompt: undefined }
+```
+
+Alternatively, use a CDN like [JSDelivr](https://www.jsdelivr.com/) to serve the site to a browser:
+
+```js
+import checkAnswer from "https://cdn.jsdelivr.net/npm/qb-answer-checker/dist/main.mjs";
+```
+
 ## Answerline Specification
 
 This section specifies the kind of (quizbowl) answerlines that the program is designed to parse.
