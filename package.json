@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "type": "module",
   "description": "A package to automatically check/judge answers against quizbowl answerlines.",
-  "main": "lib/check-answer.js",
+  "main": "src/check-answer.js",
   "scripts": {
     "test": "node test/script.js"
   },
