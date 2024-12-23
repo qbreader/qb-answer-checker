@@ -5,6 +5,7 @@
   "description": "A package to automatically check/judge answers against quizbowl answerlines.",
   "main": "src/check-answer.js",
   "scripts": {
+    "build": "webpack",
     "test": "node test/script.js"
   },
   "repository": {
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/qbreader/qb-answer-checker#readme",
   "devDependencies": {
-    "semistandard": "^17.0.0"
+    "semistandard": "^17.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "damerau-levenshtein-js": "^1.1.8",
