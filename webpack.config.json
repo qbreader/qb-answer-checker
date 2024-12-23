@@ -1,0 +1,13 @@
+{
+  "mode": "production",
+  "entry": "./src/check-answer.js",
+  "experiments": {
+    "outputModule": true
+  },
+  "output": {
+    "library": {
+      "type": "modern-module"
+    }
+  },
+  "devtool": "source-map"
+}

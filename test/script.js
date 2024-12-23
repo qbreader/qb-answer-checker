@@ -1,4 +1,4 @@
-import checkAnswer from '../lib/check-answer.js';
+import checkAnswer from '../src/check-answer.js';
 
 import fs from 'fs';
 import csv from 'jquery-csv';
