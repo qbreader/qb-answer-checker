@@ -13,6 +13,11 @@ checkAnswer("<b><u>1921</u></b>", 1921);
 // output: { directive: 'accept', directedPrompt: undefined }
 ```
 
+If you have installed the repository as an [npm package](https://www.npmjs.com/package/qb-answer-checker), you can directly import the function, as `src/check-answer.js` has been set up as the main entry point of the repository:
+```js
+import checkAnswer from "qb-answer-checker";
+```
+
 Alternatively, use a CDN like [JSDelivr](https://www.jsdelivr.com/) to serve the site to a browser:
 
 ```js
