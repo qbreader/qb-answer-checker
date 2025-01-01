@@ -4,11 +4,6 @@ import { toArabic } from 'roman-numerals';
 const { toWords } = numberToWords;
 
 const typoCorrections = {
-  сontain: 'contain',
-  сontained: 'contained',
-  сontainer: 'container',
-  сontainers: 'containers',
-  сontaining: 'containing',
   сontainor: 'container',
   сontainors: 'containers',
   сontains: 'contains',
@@ -177,12 +172,12 @@ export default function tokenize (string, sort = false) {
       tokens[i] = britishConversions[tokens[i]];
     }
 
-    if (tokens[i].endsWith('s')) {
-      tokens[i] = tokens[i].slice(0, -1);
-    }
-
     if (Object.prototype.hasOwnProperty.call(typoCorrections, tokens[i])) {
       tokens[i] = typoCorrections[tokens[i]];
+    }
+
+    if (tokens[i].endsWith('s') && tokens[i].length > 1 && isFinite(tokens[i].at(-2))) {
+      tokens[i] = tokens[i].slice(0, -1);
     }
 
     tokens[i] = romanToWord(tokens[i]);
