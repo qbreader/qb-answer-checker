@@ -151,7 +151,10 @@ const equivalentAnswers = {
   'world war 2': ['ww2', 'wwii', 'world war ii', 'world war two', 'second world war'],
   'Kanye West': ['kayne', 'west'],
   superconductors: ['super conductors', 'super conductor'],
-  'baha\' i': ['bahai']
+  'baha\' i': ['bahai'],
+  'united states of america': ['united states', 'usa', 'us', 'america'],
+  'the united states of america': ['united states', 'usa', 'us', 'america'],
+  usa: ['united states', 'us', 'america']
 };
 
 /**
