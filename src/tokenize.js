@@ -9,7 +9,8 @@ const typoCorrections = {
   сontains: 'contains',
   contentinal: 'continental',
   évaluate: 'evaluate',
-  mittani: 'mitanni'
+  mittani: 'mitanni',
+  ludmilla: 'lyudmila'
 };
 
 const ordinalConversions = {
