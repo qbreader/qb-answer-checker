@@ -7,6 +7,21 @@ import tokenize from './tokenize.js';
 import * as utils from './utils.js';
 
 /**
+ * @param {string} string
+ * @returns
+ */
+function normalizeString (string) {
+  return string
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // replace special characters
+    .toLowerCase()
+    .replace(/\(s\)/g, 's') // standardize (s) -> s
+    .replace(/["“‟❝”❞]/g, '"') // replace all types of quotes with the same quote
+    .replace(/\p{Pd}/gu, '-') // replace all dashes with the same dash
+    .replace(/[\u00B7\u22C5\u2027]/g, '') // interpuncts
+    .replace(/<\/?i>/g, ''); // remove italics
+}
+
+/**
  * Check if the given answer matches the answerline.
  * @param {string} answerline
  * @param {string} givenAnswer
@@ -25,15 +40,9 @@ function checkAnswer (answerline, givenAnswer, strictness = 7, verbose = false) 
 
   const isFormattedAnswerline = /<u>/.test(answerline);
 
-  answerline = utils.replaceSpecialCharacters(answerline);
-  answerline = answerline.toLowerCase();
-  answerline = utils.replaceSpecialSubstrings(answerline);
-  answerline = utils.removeItalics(answerline);
+  answerline = normalizeString(answerline);
 
-  givenAnswer = utils.replaceSpecialCharacters(givenAnswer);
-  givenAnswer = givenAnswer.toLowerCase();
-  givenAnswer = utils.replaceSpecialSubstrings(givenAnswer);
-  givenAnswer = utils.removeItalics(givenAnswer);
+  givenAnswer = normalizeString(givenAnswer);
   givenAnswer = utils.removePunctuation(givenAnswer);
   const givenAnswerTokens = tokenize(givenAnswer, true);
 

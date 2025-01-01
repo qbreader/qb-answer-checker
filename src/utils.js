@@ -56,29 +56,8 @@ function removeHTMLTags (string) {
   return string.replace(/<[^>]*>/g, '');
 }
 
-/**
- *
- * @param {string} string
- * @returns {string}
- */
-function removeItalics (string) {
-  return string.replace(/<\/?i>/g, '');
-}
-
 function removePunctuation (string) {
   return string.replace(/[.,!;:'"\\/?@#$%^&*_~’]/g, '');
-}
-
-function replaceSpecialCharacters (string) {
-  return string
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/["“‟❝”❞]/g, '"');
-}
-
-function replaceSpecialSubstrings (string) {
-  return string
-    .replace(/\(s\)/g, 's')
-    .replace(/\p{Pd}/gu, '-'); // replace all dashes with the same dash
 }
 
 export {
@@ -86,8 +65,5 @@ export {
   extractQuotes,
   extractUnderlining,
   removeHTMLTags,
-  removeItalics,
-  removePunctuation,
-  replaceSpecialCharacters,
-  replaceSpecialSubstrings
+  removePunctuation
 };
