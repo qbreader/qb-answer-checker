@@ -16,6 +16,7 @@ function normalizeString (string) {
     .toLowerCase()
     .replace(/\(s\)/g, 's') // standardize (s) -> s
     .replace(/["“‟❝”❞]/g, '"') // replace all types of quotes with the same quote
+    .replace(/[\u2018-\u201B]/g, '\'') // replace all types of single quotes with the same quote
     .replace(/\p{Pd}/gu, '-') // replace all dashes with the same dash
     .replace(/[\u00B7\u22C5\u2027]/g, '') // interpuncts
     .replace(/<\/?i>/g, ''); // remove italics

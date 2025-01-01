@@ -146,7 +146,8 @@ const equivalentAnswers = {
   tennessine: ['ts'],
   oganesson: ['og'],
   'Kanye West': ['kayne', 'west'],
-  superconductors: ['super conductors', 'super conductor']
+  superconductors: ['super conductors', 'super conductor'],
+  'baha\' i': ['bahai']
 };
 
 /**
