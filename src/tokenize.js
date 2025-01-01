@@ -131,6 +131,18 @@ const britishConversions = {
   paediatric: 'pediatric'
 };
 
+const muhammadConversions = {
+  muhammed: 'muhammad',
+  muhamad: 'muhammad',
+  mohammad: 'muhammad',
+  mohammed: 'muhammad',
+  mahammad: 'muhammad',
+  maxammed: 'muhammad',
+  mehemmed: 'muhammad',
+  mohamad: 'muhammad',
+  mohamed: 'muhammad'
+};
+
 /**
  * Tries to interpret token as a roman numeral and convert it to a word.
  * @param {string} token
@@ -175,6 +187,10 @@ export default function tokenize (string, sort = false) {
 
     if (Object.prototype.hasOwnProperty.call(typoCorrections, tokens[i])) {
       tokens[i] = typoCorrections[tokens[i]];
+    }
+
+    if (Object.prototype.hasOwnProperty.call(muhammadConversions, tokens[i])) {
+      tokens[i] = muhammadConversions[tokens[i]];
     }
 
     if (tokens[i].endsWith('s') && tokens[i].length > 1 && isFinite(tokens[i].at(-2))) {
