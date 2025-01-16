@@ -22,7 +22,7 @@ function extractKeyWords (string) {
  * @returns {string} - The extracted quotes or the string without HTML tags.
  */
 function extractQuotes (string) {
-  const matches = string.match(/(?<=["])[^"]*(?=["])/g);
+  const matches = string.match(/"[^"]*(?=["])/g)?.map(match => match.slice(1));
 
   if (matches) {
     return removeHTMLTags(matches.reduce((prev, curr) => prev + ' ' + curr, '').trim());
@@ -38,7 +38,7 @@ function extractQuotes (string) {
  * @returns {string} - The extracted underlined text or the string without HTML tags.
  */
 function extractUnderlining (string) {
-  const matches = string.match(/(?<=<u>)[^<]*(?=<\/u>)/g);
+  const matches = string.match(/<u>[^<]*(?=<\/u>)/g)?.map(match => match.slice(3));
 
   if (matches) {
     return removeHTMLTags(matches.reduce((prev, curr) => prev + curr + ' ', '').trim());

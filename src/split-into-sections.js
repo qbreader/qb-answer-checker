@@ -17,8 +17,10 @@ function removeParentheses (string) {
 export default function splitIntoSections (answerline) {
   const mainSection = removeParentheses(answerline);
 
-  let bracketSections = answerline.match(/(?<=\[)[^\]]*(?=\])/g) ?? [];
-  let parenthesisSections = answerline.match(/(?<=\()[^)]*(?=\))/g) ?? [];
+  let bracketSections = answerline.match(/\[[^\]]*(?=\])/g) ?? [];
+  bracketSections = bracketSections.map(section => section.slice(1));
+  let parenthesisSections = answerline.match(/\([^)]*(?=\))/g) ?? [];
+  parenthesisSections = parenthesisSections.map(section => section.slice(1));
 
   bracketSections = bracketSections.filter(section => DIRECTIVES_FLATTENED.some(directive => section.startsWith(directive)));
   parenthesisSections = parenthesisSections.filter(section => DIRECTIVES_FLATTENED.some(directive => section.startsWith(directive)));
