@@ -39,6 +39,10 @@ function checkAnswer (answerline, givenAnswer, strictness = 7, verbose = false) 
     return { directive: 'reject', directedPrompt: undefined };
   }
 
+  if (typeof strictness !== 'number' || strictness < 0) {
+    strictness = 7;
+  }
+
   const isFormattedAnswerline = /<u>/.test(answerline);
 
   answerline = normalizeString(answerline);
