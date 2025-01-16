@@ -192,8 +192,12 @@ export default function generateUnformattedAnswers (formattedAnswer, isMainAnswe
   ];
 
   if (isMainAnswer) {
-    answers.push(getAbbreviation(formattedAnswer));
-    answers.push(getAbbreviation(utils.extractUnderlining(formattedAnswer)));
+    for (const answer of [formattedAnswer, utils.extractUnderlining(formattedAnswer)]) {
+      const abbreviation = getAbbreviation(answer);
+      if (abbreviation.length > 1) {
+        answers.push(abbreviation);
+      }
+    }
   }
 
   if (answers[0] in equivalentAnswers) {

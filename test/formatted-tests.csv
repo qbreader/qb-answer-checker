@@ -1,6 +1,7 @@
 Directive,Given,Directed Prompt,Answer Line
 accept,usa,,<b><u>U</u></b>nited <b><u>S</u></b>tates of America
 accept,america,,<b><u>U</u></b>nited <b><u>S</u></b>tates of America
+reject,u,,<b><u>USA</u></b>
 accept,united states,,<b><u>USA</u></b>
 accept,america,,<b><u>USA</u></b>
 accept,Ruslan and Ludmilla,,<b><u>Ruslan and Lyudmila</u></b>
