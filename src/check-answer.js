@@ -70,8 +70,9 @@ function checkAnswer (answerline, givenAnswer, strictness = 7, verbose = false) 
   for (const { directive, formattedAnswers, directedPrompt, isMainAnswer } of parsedClauses) {
     for (const formattedAnswer of formattedAnswers) {
       for (const unformattedAnswer of generateUnformattedAnswers(formattedAnswer, isMainAnswer)) {
-        const tokens = tokenize(unformattedAnswer, true);
+        if (unformattedAnswer === '') { continue; }
 
+        const tokens = tokenize(unformattedAnswer, true);
         const matches = referenceContainsTokens(
           isFormattedAnswerline || directive === 'reject' ? tokens : givenAnswerTokens,
           isFormattedAnswerline || directive === 'reject' ? givenAnswerTokens : tokens,
