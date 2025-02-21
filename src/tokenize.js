@@ -10,7 +10,9 @@ const typoCorrections = {
   contentinal: 'continental',
   évaluate: 'evaluate',
   mittani: 'mitanni',
-  ludmilla: 'lyudmila'
+  ludmilla: 'lyudmila',
+  grandma: 'grandmother',
+  grandpa: 'grandfather'
 };
 
 const ordinalConversions = {
