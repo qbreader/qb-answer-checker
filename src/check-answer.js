@@ -81,13 +81,19 @@ function checkAnswer (answerline, givenAnswer, strictness = 7, verbose = false) 
         if (unformattedAnswer === '') { continue; }
 
         const tokens = tokenize(unformattedAnswer, true);
-        const matches = referenceContainsTokens(
-          isFormattedAnswerline || directive === 'reject' ? tokens : givenAnswerTokens,
-          isFormattedAnswerline || directive === 'reject' ? givenAnswerTokens : tokens,
-          directive === 'reject' ? -1 : strictness,
-          !isFormattedAnswerline,
-          directive !== 'reject'
-        );
+        let matches;
+
+        if (directive === 'reject') {
+          matches = unformattedAnswer === givenAnswer;
+        } else {
+          matches = referenceContainsTokens(
+            isFormattedAnswerline ? tokens : givenAnswerTokens,
+            isFormattedAnswerline ? givenAnswerTokens : tokens,
+            strictness,
+            !isFormattedAnswerline,
+            true
+          );
+        }
 
         if (matches) { return { directive, directedPrompt }; }
       }
