@@ -43,6 +43,10 @@ function checkAnswer (answerline, givenAnswer, strictness = 7, verbose = false) 
     strictness = 7;
   }
 
+  if (/<b>/.test(answerline) && !/<u>/.test(answerline)) {
+    answerline = answerline.replace(/<b>/g, '<u>').replace(/<\/b>/g, '</u>');
+  }
+
   const isFormattedAnswerline = /<u>/.test(answerline);
 
   answerline = normalizeString(answerline);

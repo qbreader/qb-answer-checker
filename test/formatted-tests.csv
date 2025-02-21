@@ -1,4 +1,5 @@
 Directive,Given,Directed Prompt,Answer Line
+accept,Republic of Iraq,,<b>Iraq</b>
 reject,a,,<b><u>Weimar Republic</u></b>; prompt on “<b>Deutsches Reich</b>” or “<b>Germany</b>”
 accept,usa,,<b><u>U</u></b>nited <b><u>S</u></b>tates of America
 accept,america,,<b><u>U</u></b>nited <b><u>S</u></b>tates of America
