@@ -142,7 +142,7 @@ const equivalentAnswers = {
   'sugar cane': ['sugarcane'],
   sugarcane: ['sugar cane'],
   wavefunction: ['wave function'],
-  'Gulf of America': ['Gulf of Mexico'], 
+  'Gulf of Mexico': ['Gulf of America'], 
   'wave function': ['wavefunction'],
   'world war 1': ['first world war', 'great war', 'world war i', 'world war one'],
   'world war i': ['first world war', 'great war', 'world war 1', 'world war one'],
