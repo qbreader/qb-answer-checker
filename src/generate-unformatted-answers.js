@@ -128,6 +128,7 @@ const equivalentAnswers = {
   nukes: ['atomic bombs', 'atomic weapons', 'nuclear bombs', 'nuclear weapons', 'fission bombs', 'A-bombs'],
   fairytales: ['fairy tales'],
   'fairy tales': ['fairytales'],
+  sulayman: ['sulayman', 'solomon'] 
   house: ['home', 'dwelling', 'residence'],
   mouse: ['mice'],
   rail: ['railroad'],
