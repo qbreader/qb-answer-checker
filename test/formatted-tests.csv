@@ -1,4 +1,5 @@
 Directive,Given,Directed Prompt,Answer Line
+accept,sulayman,,"<b><u>Solomon</u></b>"
 accept,grandma,,<b><u>grandmother</u></b>s [prompt on <u>grandparent</u>s or <u>relative</u>s or <u>family</u> members; prompt on <u>old</u> <u>people</u>]
 accept,Republic of Iraq,,<b>Iraq</b>
 reject,a,,<b><u>Weimar Republic</u></b>; prompt on “<b>Deutsches Reich</b>” or “<b>Germany</b>”
