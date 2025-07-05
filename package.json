@@ -6,6 +6,7 @@
   "main": "src/check-answer.js",
   "scripts": {
     "build": "webpack",
+    "publish": "npm publish --access public",
     "test": "node test/script.js"
   },
   "repository": {
