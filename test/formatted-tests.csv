@@ -1,4 +1,5 @@
 Directive,Given,Directed Prompt,Answer Line
+accept,sulayman,,"<b><u>Solomon</u></b>"
 accept,grandma,,<b><u>grandmother</u></b>s [prompt on <u>grandparent</u>s or <u>relative</u>s or <u>family</u> members; prompt on <u>old</u> <u>people</u>]
 accept,Republic of Iraq,,<b>Iraq</b>
 reject,a,,<b><u>Weimar Republic</u></b>; prompt on “<b>Deutsches Reich</b>” or “<b>Germany</b>”
@@ -12,6 +13,7 @@ accept,university,,<b><u>universities</u></b>
 accept,universities,,<b><u>university</u></b>
 accept,html,,<b><u>H·T·M·L</u></b>
 reject,constructor,,<b><u>Soviet Union</u></b> [or <b><u>USSR</u></b> or <b><u>SSSR</u></b> or <b><u>Soyuz Sovietskikh</u></b> Sotsialichetskhikh Respublik; accept <b><u>Russia</u></b> or <b><u>Russia</u></b>n Empire or <b><u>Rossiya</u></b> or <b><u>Rossiyskaya</u></b> Imperiya] (Pavel Tchelitchew is the subject of Davenport’s essay“Tchelitchew” from<i> The Geography of the Imagination</i>. The second sentence refers to El Lissitzky’s<i> The</i> <i>Constructor</i>. Vladimir Tatlin created<i> Corner Counter-Relief</i> and designed the<i> Monument to the Third International</i>.)
+accept,realignments,,"<b><u>realignments</u></b> [do not prompt on ""dealignments""]"
 accept,realignments,,"<b><u>realignments</u></b> [reject ""dealignments""]"
 reject,dealignments,,"<b><u>realignments</u></b> [reject ""dealignments""]"
 accept,dihydroxylation,,<b><u>dihydroxylation</u></b> [prompt on <b><u>hydroxylation</u></b>]

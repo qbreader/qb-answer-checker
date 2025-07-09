@@ -1,7 +1,7 @@
 export const DIRECTIVES = {
   accept: ['accept', 'or', 'antiprompt on', 'anti-prompt on', 'antiprompt', 'anti-prompt'],
   prompt: ['prompt on', 'prompt'],
-  reject: ['reject', 'do not accept or prompt on', 'do not accept']
+  reject: ['reject', 'do not accept or prompt on', 'do not accept', 'do not prompt on', 'do not prompt']
 };
 export const DIRECTIVES_FLATTENED = Object.values(DIRECTIVES).flat();
 

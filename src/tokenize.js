@@ -12,7 +12,8 @@ const typoCorrections = {
   mittani: 'mitanni',
   ludmilla: 'lyudmila',
   grandma: 'grandmother',
-  grandpa: 'grandfather'
+  grandpa: 'grandfather',
+  sulayman: 'solomon'
 };
 
 const ordinalConversions = {

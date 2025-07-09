@@ -1,11 +1,12 @@
 {
   "name": "qb-answer-checker",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "type": "module",
   "description": "A package to automatically check/judge answers against quizbowl answerlines.",
   "main": "src/check-answer.js",
   "scripts": {
     "build": "webpack",
+    "publish": "npm publish --access public",
     "test": "node test/script.js"
   },
   "repository": {
@@ -34,5 +35,11 @@
     "roman-numerals": "^0.3.2",
     "stemmer": "^2.0.1"
   },
-  "types": "src/check-answer.d.ts"
+  "types": "src/check-answer.d.ts",
+  "semistandard": {
+    "ignore": [
+      "dist/**",
+      "**.d.ts"
+    ]
+  }
 }
